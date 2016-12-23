@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<select id="queryByUserCode" parameterType="String" resultType="app11a.entity.User">
+  SELECT USERNAME FROM t_ybt_user WHERE userCode= #{userCode}
+</select>
