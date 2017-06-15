@@ -8,7 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 public class mainTest {
 	
 	public mainTest() throws IOException {
-		String resource = "/src/mybatis-config.xm";
+		String resource = "/src/mybatis-config.xml";
 		InputStream inputStream = Resources.getResourceAsStream(resource);
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 	}
